@@ -18,7 +18,7 @@ SERVER_ADDR ='52.21.65.56'
 SERVER_PORT = 5678
 
 # Number of valid operations to call
-NUM_OPS = 2
+NUM_OPS = 3
 
 # List of operations
 ops = ['deposit', 'interest']
