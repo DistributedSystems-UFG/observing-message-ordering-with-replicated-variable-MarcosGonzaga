@@ -1,20 +1,20 @@
 #To Do: Replace all this with a naming service
 
 # With local addresses (within the same cloud region)
-#PEERS = ['172.31.78.41','172.31.65.227','172.31.74.212','172.31.75.17','172.31.72.48','172.31.75.162']
+#PEERS = ['172.31.7.180','172.31.2.162','172.31.2.145','172.31.12.160','172.31.0.48']
 
 # With public addresses (in the same region of the cloud)
 # The last one is not fixed and must be changed each time the lab is restarted.
-PEERS_SAME_REGION = ['3.219.23.96','34.226.166.158','44.198.151.245','44.219.197.47','44.220.0.53','100.25.166.32']
+PEERS_SAME_REGION = ['52.21.65.56','34.195.96.130','54.221.58.118','52.4.144.234','44.222.19.125']
 
 # With public addresses (in two separate regions - last two servers in Oregon)
-PEERS_TWO_REGIONS = ['3.219.23.96','34.226.166.158','44.198.151.245','44.219.197.47','44.239.194.163','52.88.79.71']
+PEERS_TWO_REGIONS = ['52.21.65.56','34.195.96.130','54.221.58.118','52.88.207.23','44.239.117.195']
 
 
-PEER_UDP_PORT = 4567
+PEER_UDP_PORT = 4678
 PEER_TCP_PORT = 5679
-N = 6   # Number of peers
-SERVER_ADDR ='3.219.23.96'
+N = 5   # Number of peers
+SERVER_ADDR ='52.21.65.56'
 SERVER_PORT = 5678
 
 # Number of valid operations to call
