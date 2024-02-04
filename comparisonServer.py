@@ -54,18 +54,18 @@ def waitForLogsAndCompare(N_MSGS):
 	#	msgs.append(pickle.loads(msgPack))
 	#	numPeers = numPeers + 1
 
-    # Receive the logs of messages from the peer processes
-    while numPeers < N:
-        (conn, addr) = serverSock.accept()
-        msg = b''  # Inicializa uma string de bytes vazia
-        while True:
-            chunk = conn.recv(32768)
-            if not chunk:
-                break  # Nenhum dado recebido, encerra o loop interno
-            msg += chunk
-        conn.close()
-        msgs.append(pickle.loads(msg))
-        numPeers = numPeers + 1
+        # Receive the logs of messages from the peer processes
+        while numPeers < N:
+            (conn, addr) = serverSock.accept()
+            msg = b''  # Inicializa uma string de bytes vazia
+            while True:
+                chunk = conn.recv(32768)
+                if not chunk:
+                    break  # Nenhum dado recebido, encerra o loop interno
+                msg += chunk
+            conn.close()
+            msgs.append(pickle.loads(msg))
+            numPeers = numPeers + 1
 
 	unordered = 0
 
